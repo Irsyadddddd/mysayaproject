@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:   #1e337a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1 {
+            text-align: center;
+            padding-top: 20px;
+        }
+        hr {
+            border: none;
+            height: 2px;
+            background-image: linear-gradient(to right, #333, #8fddf9, #333); //
+            margin: 20px 0; //
+            width: 80%; //
+        }
+        .content {
+            display: flex;
+            justify-content: flex-start;
+            width: 80%;
+            margin-top: 20px;
+        }
+        table {
+            margin-right: 20px;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #a61616;
+        }
+        th {
+            background-color: #1e337a;
+        }
+        tr:hover {
+            background-color: #1e337a;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .social-icons {
+            margin-top: 40px;
+        }
+        .social-icons a {
+            color: #333;
+            margin-right: 20px;
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <h1>BIODATA DIRI</h1>
+    <hr>
+    <div class="content">
+        <table>
+            <tr>
+                <th>DATA DIRI</th>
+            </tr>
+            <tr>
+                <th>Informasi</th>
+                <th>Data</th>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td>MUHAMMAD IRSYADUDIN ISLAMI</td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>2211102441128</td>
+            </tr>
+            <tr>
+                <td>Umur</td>
+                <td>19 tahun</td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>Jl.P.DIGUNA</td>
+            </tr>
+            <tr>
+                <td>Pendidikan</td>
+                <td>S1 Teknik Informatika</td>
+        </table>
+        <img src="{%static 'admin/img/mii.jpg' %}"  alt="photo Profil" style="width: 190px;">
+    </div>
+    <div class="content">
+        <table>
+            <tr>
+                <th>PENDIDIKAN</th>   
+                <td>S1</td>
+                <td>Universitas Muhammidayah Kalimantan Timur</td>
+                <td>2090/3009</td>
+            </tr>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+    </ul>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</body>
+</html>
